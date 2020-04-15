@@ -10,6 +10,6 @@ MEMBUAT PROGRAM KOTLIN (BITLABS ACADEMY)
 5. exit
 Choose Menu: 
 ##
-![menu](https://user-images.githubusercontent.com/61608860/79127107-7bf97300-7dcb-11ea-8b9b-af3a591e6843.PNG)
+![Capture](https://user-images.githubusercontent.com/61608860/79321177-28a33400-7f35-11ea-8cb5-c55bedc04e7f.PNG)
 ##
 ![viewItem](https://user-images.githubusercontent.com/61608860/79317074-6f8e2b00-7f2f-11ea-9ccf-39d92ec8bbfb.PNG)
