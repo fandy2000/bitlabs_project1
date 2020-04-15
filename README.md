@@ -3,7 +3,7 @@ MEMBUAT PROGRAM KOTLIN (BITLABS ACADEMY)
 
 ## Welcome to Fandy's Store Admin Panel 
 =======================================
-1. Create Menu
+1. Create Item
 2. View Item
 3. Update Item
 4. Delete Item
