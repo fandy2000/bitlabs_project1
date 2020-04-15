@@ -29,7 +29,7 @@ fun main(){ //Membuat Logic Main Menu #2/10
 fun initMenu(){
     println(" Welcome to Fandy's Store Admin Panel ")
     println("=======================================")
-    println("1. Create Menu")
+    println("1. Created Item")
     println("2. View Item")
     println("3. Update Item")
     println("4. Delete Item")
@@ -67,14 +67,17 @@ fun createdItem(){
                 val weaponKu = Weapon()
                 print("Weapon's Name: ")
                 weaponKu.name = scanner.nextLine()
-                print("Weapon's Range: ")
+
+                print("Weapon's ZeroRange: ")
                 weaponKu.zeroRange = scanner.nextLine()
-                print("Weapon's Magazine Size: ")
-                weaponKu.magazineSize = scanner.nextInt()
-                print("Weapon's Shoot Mode: ")
+
+                print("Weapon's ShootMode: ")
                 weaponKu.modeShoot = scanner.nextLine()
+
                 print("Weapon's Damage: ")
                 weaponKu.damage = scanner.nextInt()
+                print("Weapon's MagazineSize: ")
+                weaponKu.magazineSize = scanner.nextInt()
                 scanner.nextLine()
                 listWeapon.add(weaponKu)
                 println()
@@ -160,6 +163,12 @@ fun updateItem(){
                     val weapon = listWeapon[chooseWeapon-1]
                     print("Weapon's Name: ")
                     weapon.name = scanner.nextLine()
+                    print("Weapon's Mode Shoot: ")
+                    weapon.modeShoot = scanner.nextLine()
+                    print("Weapon's Zero Range: ")
+                    weapon.zeroRange = scanner.nextLine()
+                    print("Weapon's Zero magazine: ")
+                    weapon.magazineSize = scanner.nextInt()
                     print("Weapon's Damage: ")
                     weapon.damage = scanner.nextInt()
                     scanner.nextLine()
