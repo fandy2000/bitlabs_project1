@@ -202,11 +202,11 @@ fun updateItem(){
 fun viewWeapon(){
     println("Weapon")
     listWeapon.forEachIndexed { index, element ->
-        println("======================================")
+        println("======================================================================================")
         println("no||Weapon ||   Damage  ||   ZeroRange  || MagazineSize  ||  ModeShoot   ")
-        println("======================================")
+        println("======================================================================================")
         println("${index + 1}.  ${element.name}          ${element.damage}       ${element.zeroRange}          ${element.magazineSize}             ${element.modeShoot}")
-        println("===================================")
+        println("======================================================================================")
     }
 }
 fun viewMagicWeapon(){
