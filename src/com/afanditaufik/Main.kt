@@ -43,19 +43,10 @@ fun initWeapon(){
     val weapon = Weapon()
     weapon.name = "M 24"
     weapon.damage = 89
+    weapon.zeroRange = "100 - 1000"
+    weapon.magazineSize = 5
+    weapon.modeShoot = "Single"
     listWeapon.add(weapon)
-
-    val swordWeapon = Weapon()
-    swordWeapon.name = "Shotgun"
-    swordWeapon.damage = 65
-    listWeapon.add(swordWeapon)
-
-    val awmWeapon = Weapon()
-    awmWeapon.name = "AWM"
-    awmWeapon.damage = 132
-    listWeapon.add(awmWeapon)
-
-
 
     val magicWeapon = MagicWeapon()
     magicWeapon.name = "flare gun"
@@ -76,6 +67,12 @@ fun createdItem(){
                 val weaponKu = Weapon()
                 print("Weapon's Name: ")
                 weaponKu.name = scanner.nextLine()
+                print("Weapon's Range: ")
+                weaponKu.zeroRange = scanner.nextLine()
+                print("Weapon's Magazine Size: ")
+                weaponKu.magazineSize = scanner.nextInt()
+                print("Weapon's Shoot Mode: ")
+                weaponKu.modeShoot = scanner.nextLine()
                 print("Weapon's Damage: ")
                 weaponKu.damage = scanner.nextInt()
                 scanner.nextLine()
@@ -192,13 +189,14 @@ fun updateItem(){
 
     }while (choose > 2)
 }
+//https://www.pricebook.co.id/article/game_apps/2018/04/10/8248/daftar-lengkap-senjata-pubg-mobile
 fun viewWeapon(){
     println("Weapon")
     listWeapon.forEachIndexed { index, element ->
         println("======================================")
-        println("no  || Weapon  ||   Damage   ||    ")
+        println("no||Weapon ||   Damage  ||   ZeroRange  || MagazineSize  ||  ModeShoot   ")
         println("======================================")
-        println("${index + 1}.      ${element.name}         ${element.damage}")
+        println("${index + 1}.  ${element.name}          ${element.damage}       ${element.zeroRange}          ${element.magazineSize}             ${element.modeShoot}")
         println("===================================")
     }
 }
