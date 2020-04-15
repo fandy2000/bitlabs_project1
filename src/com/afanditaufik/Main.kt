@@ -37,11 +37,25 @@ fun initMenu(){
     print("Choose Menu: ")
 
 }
+
+//update git
 fun initWeapon(){
     val weapon = Weapon()
     weapon.name = "M 24"
     weapon.damage = 89
     listWeapon.add(weapon)
+
+    val swordWeapon = Weapon()
+    swordWeapon.name = "Shotgun"
+    swordWeapon.damage = 65
+    listWeapon.add(swordWeapon)
+
+    val awmWeapon = Weapon()
+    awmWeapon.name = "AWM"
+    awmWeapon.damage = 132
+    listWeapon.add(awmWeapon)
+
+
 
     val magicWeapon = MagicWeapon()
     magicWeapon.name = "flare gun"
