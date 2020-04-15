@@ -48,11 +48,47 @@ fun initWeapon(){
     weapon.modeShoot = "Single"
     listWeapon.add(weapon)
 
+    val grozaWeapon = Weapon()
+    grozaWeapon.name = "Groza"
+    grozaWeapon.damage = 48
+    grozaWeapon.zeroRange = "100 - 400"
+    grozaWeapon.magazineSize = 30
+    grozaWeapon.modeShoot = "Single, auto"
+    listWeapon.add(grozaWeapon)
+
+    val akmWeapon = Weapon()
+    akmWeapon.name = "AKM"
+    akmWeapon.damage = 48
+    akmWeapon.zeroRange = "100 - 400"
+    akmWeapon.magazineSize = 30
+    akmWeapon.modeShoot = "Single, auto"
+    listWeapon.add(akmWeapon)
+
+    val uziWeapon = Weapon()
+    uziWeapon.name = "Uzi"
+    uziWeapon.damage = 23
+    uziWeapon.zeroRange = "100 - 200"
+    uziWeapon.magazineSize = 25
+    uziWeapon.modeShoot = "Single, auto"
+    listWeapon.add(uziWeapon)
+
     val magicWeapon = MagicWeapon()
-    magicWeapon.name = "flare gun"
-    magicWeapon.damage = 43
-    magicWeapon.magicDamage = 25
+    magicWeapon.name = "kuina"
+    magicWeapon.damage = 951
+    magicWeapon.magicDamage = 1965
     listMagicWeapon.add(magicWeapon)
+
+    val magicEnma = MagicWeapon()
+    magicEnma.name = "Enma Sword"
+    magicEnma.damage = 1112
+    magicEnma.magicDamage = 1500
+    listMagicWeapon.add(magicEnma)
+
+    val magicIchimonji = MagicWeapon()
+    magicIchimonji.name = "Wado Ichimonji"
+    magicIchimonji.damage = 879
+    magicIchimonji.magicDamage = 963
+    listMagicWeapon.add(magicIchimonji)
 }
 fun createdItem(){
     do {
@@ -211,9 +247,11 @@ fun viewWeapon(){
 }
 fun viewMagicWeapon(){
     println("Magic Weapon")
-    println("======================================")
     listMagicWeapon.forEachIndexed { index, element ->
-        println(" no    Weapon     Damage      Magic ")
-        println("${index + 1}.      ${element.name}        ${element.damage}        ${element.magicDamage}")
+        println("=====================================================")
+        println(" no||  Weapon    ||    Damage     ||   Magic ")
+        println("=====================================================")
+        println("${index + 1}.  ${element.name}        ${element.damage}           ${element.magicDamage}")
+        println("=====================================================")
     }
 }
